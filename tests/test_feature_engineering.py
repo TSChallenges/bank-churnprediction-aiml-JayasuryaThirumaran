@@ -1,4 +1,14 @@
 # tests/test_feature_engineering.py
+import os
+import sys
+from pathlib import Path
+file = Path(__file__).resolve()
+parent, root = file.parent, file.parents[1]
+sys.path.append(str(root))
+sys.path.append(str(parent))
+
+
+
 
 import pytest
 import pandas as pd
